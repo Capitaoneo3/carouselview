@@ -50,10 +50,10 @@ public class SampleCarouselViewActivity extends AppCompatActivity {
 
         carouselView.setPageCount(sampleImages.length);
 
+        carouselView.setImageListener(imageListener);
         customCarouselView.setPageCount(sampleImages.length);
         customCarouselView.setSlideInterval(4000);
 
-        carouselView.setImageListener(imageListener);
         customCarouselView.setViewListener(viewListener);
         carouselView.setImageClickListener(new ImageClickListener() {
             @Override
