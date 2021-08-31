@@ -50,8 +50,11 @@ public class SampleCarouselViewActivity extends AppCompatActivity {
 
         carouselView.setPageCount(sampleImages.length);
 
+//{ essa ordem deve ser mantida se nao pode dar erro
         carouselView.setImageListener(imageListener);
         customCarouselView.setPageCount(sampleImages.length);
+//fim da ordem }
+
         customCarouselView.setSlideInterval(4000);
 
         customCarouselView.setViewListener(viewListener);
